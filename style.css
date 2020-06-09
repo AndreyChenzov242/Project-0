@@ -38,24 +38,52 @@ header {
     padding: 0;
     justify-content: space-between;
     margin-bottom: 32px;
-    padding-top: 32px;
 }
 
 .nav_li {
     display: block;
     font-size: 0;
+    position: relative;
 }
 
 .nav_h3 {
-    display: inline;
+    display: inline-block;
     font-weight: bold;
     font-size: 18px;
     color: #828282;
     padding: 0;
+    padding: 15px 20px;
+    position: relative;
+    clip-path: inset(0 0 0 0 round 130px);
+    transition: color .2s ease-in-out;
+    z-index: 5;
 }
 
 .nav_a {
     text-decoration: none;
+}
+
+.nav_h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    z-index: -1;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform .2s ease-in-out;
+}
+
+.nav_h3:hover {
+    color: white;
+}
+
+.nav_h3:hover::before {
+    background: #828282;
+    transform: scaleY(1);
 }
 
 .description {
@@ -198,10 +226,9 @@ header {
     margin-bottom: 55px;
 }
 
-#portfolio1,#portfolio2,#portfolio3 {
+#portfolio1, #portfolio2, #portfolio3 {
     background-color: #F6F6F6;
     height: 100vh;
-
 }
 
 .portfolio-container {
@@ -227,6 +254,10 @@ header {
     text-align: center;
 }
 
+.portfolio-h3 h3 a:hover{
+    color: #FF4644;
+}
+
 a {
     font-size: 18px;
     color: #070707;
@@ -237,6 +268,10 @@ a {
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
+}
+
+.rueng:hover{
+    color: rgb(214, 86, 86);
 }
 
 #contacts {
@@ -272,11 +307,9 @@ a {
     margin: 0 81px 80px 81px;
     border-radius: 50px;
     border: 1px solid black;
-
     position: relative;
     clip-path: inset(0 0 0 0 round 50px);
     transition: color .2s ease-in-out;
-
     z-index: 5;
 }
 
@@ -287,10 +320,8 @@ a {
     right: -2px;
     bottom: -2px;
     left: -2px;
-
     background: black;
     z-index: -1;
-
     transform: scaleY(1);
     transform-origin: bottom;
     transition: transform .2s ease-in-out;
@@ -327,7 +358,6 @@ a {
     display: block;
 }
 
-.portfolio-image:first-child{
+.portfolio-image:first-child {
     padding-top: 50px;
 }
-
