@@ -3,7 +3,7 @@ html, body {
     font-family: "Gilroy", sans-serif;
 }
 
-.intro {
+#intro {
     height: 100vh;
     background: #ffffff;
 }
@@ -12,8 +12,6 @@ html, body {
     max-width: 953px;
     margin: 0 auto;
 }
-
-
 
 .swiper-container {
     width: 100%;
@@ -30,7 +28,7 @@ html, body {
 
 header {
     border-bottom: 1px solid #828282;
-    ;
+    align-items: bottom;
     margin-bottom: 40px;
 }
 
@@ -40,6 +38,7 @@ header {
     padding: 0;
     justify-content: space-between;
     margin-bottom: 32px;
+    margin-top: 32px;
 }
 
 .nav_li {
@@ -94,16 +93,6 @@ header {
     color: #828282;
 }
 
-.about-item-h1 {
-    
-    font-weight: bold;
-    font-size: 34px;
-    color: #070707;
-    align-self: center;
-}
-
-
-
 #about {
     height: 100vh;
     background: #F6F6F6;
@@ -113,10 +102,11 @@ header {
 .about-container {
     width: 485px;
     margin: 0;
-    position: absolute;               /* 2 */
-    top: calc(50% - 138.5px); 
-    left: calc(50% - 242.5px);                        /* 3 */
-    
+    position: absolute;
+    /* 2 */
+    top: calc(50% - 138.5px);
+    left: calc(50% - 242.5px);
+    /* 3 */
 }
 
 .about-item-h3 {
@@ -134,6 +124,12 @@ header {
     text-align: center;
     width: 155px;
     margin: 0 auto;
+}
+
+.about-item-h1 {
+    font-weight: bold;
+    font-size: 34px;
+    color: #070707;
 }
 
 #skills {
@@ -161,56 +157,57 @@ header {
 .program {
     width: 100%;
     margin: 0 auto;
-    
 }
 
 .program-item {
     display: inline-block;
     width: 166px;
     height: 206px;
-    margin-right: 80px ;
+    margin-right: 80px;
     position: relative;
 }
 
-.program-item:last-child{
+.program-item:last-child {
     margin-right: 0;
 }
 
-.program-item-stars{
+.program-item-stars {
     display: flex;
     justify-content: space-between;
-   
 }
 
 .stars {
     display: inline;
 }
 
-.program-item-image{
+.program-item-image {
     text-align: center;
 }
 
-.program-item-text{
+.program-item-text {
     width: 90px;
     font-size: 14px;
     font-weight: normal;
     text-align: center;
-    color: #828282;;
+    color: #828282;
+    ;
     margin: 0 auto 40px auto;
 }
 
-.figma{
+.figma {
     margin-bottom: 55px;
 }
 
-#portfolio {
+#portfolio1,#portfolio2,#portfolio3 {
     background-color: #F6F6F6;
+    height: 100vh;
+
 }
 
 .portfolio-container {
     margin: 0 auto;
     max-width: 953px;
-    padding-top: 112px;
+    padding-top: 30px;
     padding-bottom: 6px;
 }
 
@@ -228,13 +225,18 @@ header {
 
 .portfolio-h3 {
     text-align: center;
-    margin-bottom: 90px;
 }
 
 a {
     font-size: 18px;
     color: #070707;
     font-weight: normal;
+}
+
+.rueng {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 #contacts {
@@ -266,13 +268,43 @@ a {
 }
 
 .contacts-button {
-    background-color: #000;
     padding: 15px 20px;
     margin: 0 81px 80px 81px;
     border-radius: 50px;
+    border: 1px solid black;
+
+    position: relative;
+    clip-path: inset(0 0 0 0 round 50px);
+    transition: color .2s ease-in-out;
+
+    z-index: 5;
 }
 
-.contacts-button-text{
+.contacts-button::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+
+    background: black;
+    z-index: -1;
+
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform .2s ease-in-out;
+}
+
+.contacts-button:hover {
+    color: black;
+}
+
+.contacts-button:hover::before {
+    transform: scaleY(0);
+}
+
+.contacts-button-text {
     text-decoration: none;
     font-weight: 500;
     font-size: 18px;
@@ -280,14 +312,13 @@ a {
     margin-bottom: 86px;
 }
 
-
 .contacts-image {
     display: flex;
     justify-content: space-between;
     margin-bottom: 45px;
 }
 
-.contacts-item-h3-down{
+.contacts-item-h3-down {
     font-size: 14px;
     color: #828282;
 }
