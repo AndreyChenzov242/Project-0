@@ -322,3 +322,7 @@ a {
     font-size: 14px;
     color: #828282;
 }
+
+.fp-tableCell:first-child {
+    display: block;
+}
