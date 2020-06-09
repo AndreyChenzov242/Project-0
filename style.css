@@ -1,0 +1,293 @@
+html, body {
+    margin: 0;
+    font-family: "Gilroy", sans-serif;
+}
+
+.intro {
+    height: 100vh;
+    background: #ffffff;
+}
+
+.container {
+    max-width: 953px;
+    margin: 0 auto;
+}
+
+
+
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-container .swiper-slide {
+    overflow: hidden;
+}
+
+.swiper-container .swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    border-bottom: 1px solid #828282;
+    ;
+    margin-bottom: 40px;
+}
+
+.nav_ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.nav_li {
+    display: block;
+    font-size: 0;
+}
+
+.nav_h3 {
+    display: inline;
+    font-weight: bold;
+    font-size: 18px;
+    color: #828282;
+    padding: 0;
+}
+
+.nav_a {
+    text-decoration: none;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+.black {
+    color: #000;
+}
+
+#name-item {
+    font-size: 47.3392px;
+    font-weight: bold;
+    max-width: 124px;
+    margin: 0;
+}
+
+.temp {
+    font-size: 18px;
+    font-weight: normal;
+    width: 160px;
+}
+
+.change-lang {
+    font-weight: bold;
+    writing-mode: tb;
+    transform: rotate(180deg);
+    height: 80px;
+}
+
+.greey {
+    color: #828282;
+}
+
+.about-item-h1 {
+    
+    font-weight: bold;
+    font-size: 34px;
+    color: #070707;
+    align-self: center;
+}
+
+
+
+#about {
+    height: 100vh;
+    background: #F6F6F6;
+    position: relative;
+}
+
+.about-container {
+    width: 485px;
+    margin: 0;
+    position: absolute;               /* 2 */
+    top: calc(50% - 138.5px); 
+    left: calc(50% - 242.5px);                        /* 3 */
+    
+}
+
+.about-item-h3 {
+    font-weight: normal;
+    font-size: 18px;
+    color: #070707;
+}
+
+.about-h3 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.about-h1 {
+    text-align: center;
+    width: 155px;
+    margin: 0 auto;
+}
+
+#skills {
+    height: 100vh;
+    position: relative;
+}
+
+.skills-container {
+    position: absolute;
+    top: calc(50% - 242.5px);
+    left: calc(50% - 463px);
+    max-width: 926px;
+    margin: 0
+}
+
+.skills-h1 {
+    margin-top: 0;
+    margin-bottom: 70px;
+}
+
+.skills-h3 {
+    margin-bottom: 87px;
+}
+
+.program {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.program-item {
+    display: inline-block;
+    width: 166px;
+    height: 206px;
+    margin-right: 80px ;
+    position: relative;
+}
+
+.program-item:last-child{
+    margin-right: 0;
+}
+
+.program-item-stars{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.stars {
+    display: inline;
+}
+
+.program-item-image{
+    text-align: center;
+}
+
+.program-item-text{
+    width: 90px;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    color: #828282;;
+    margin: 0 auto 40px auto;
+}
+
+.figma{
+    margin-bottom: 55px;
+}
+
+#portfolio {
+    background-color: #F6F6F6;
+}
+
+.portfolio-container {
+    margin: 0 auto;
+    max-width: 953px;
+    padding-top: 112px;
+    padding-bottom: 6px;
+}
+
+.portfolio-h1 {
+    margin-bottom: 47px;
+}
+
+.portfolio-image {
+    margin-bottom: 45px;
+}
+
+.portfolio-image-item {
+    max-width: 100%;
+}
+
+.portfolio-h3 {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+a {
+    font-size: 18px;
+    color: #070707;
+    font-weight: normal;
+}
+
+#contacts {
+    height: 100vh;
+    background: #ffffff;
+    position: relative;
+    text-align: center;
+}
+
+.contacts-container {
+    position: absolute;
+    margin: 0;
+    top: calc(50% - 193px);
+    left: calc(50% - 171px);
+    width: 342px;
+}
+
+.contacts-item-h1 {
+    font-size: 34px;
+    color: #070707;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.contacts-item-h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 29px;
+}
+
+.contacts-button {
+    background-color: #000;
+    padding: 15px 20px;
+    margin: 0 81px 80px 81px;
+    border-radius: 50px;
+}
+
+.contacts-button-text{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 86px;
+}
+
+
+.contacts-image {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.contacts-item-h3-down{
+    font-size: 14px;
+    color: #828282;
+}
