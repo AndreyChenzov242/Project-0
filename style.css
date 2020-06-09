@@ -38,7 +38,7 @@ header {
     padding: 0;
     justify-content: space-between;
     margin-bottom: 32px;
-    margin-top: 32px;
+    padding-top: 32px;
 }
 
 .nav_li {
@@ -326,3 +326,8 @@ a {
 .fp-tableCell:first-child {
     display: block;
 }
+
+.portfolio-image:first-child{
+    padding-top: 50px;
+}
+
