@@ -464,7 +464,6 @@ i {
 .container-burger {
     height: 100%;
     width: calc(100% - 58px);
-
     display: none;
     position: absolute;
 }
