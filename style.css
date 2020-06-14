@@ -526,7 +526,13 @@ i {
         display: block;
         font-size: 34px;
         transform: rotate(180deg);
+        height: 160px;
     } 
+
+    .rueng {
+        font-size: 34px;
+        
+    }
 
     .change-lang {
         display: none;
