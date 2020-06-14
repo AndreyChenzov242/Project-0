@@ -27,6 +27,7 @@ html, body {
 }
 
 .phone_image {
+    width: 100%;
     display: none;
 }
 
@@ -299,16 +300,14 @@ a {
 #contacts {
     height: 100vh;
     background: #ffffff;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 .contacts-container {
-    position: absolute;
-    margin: 0;
-    top: calc(50% - 193px);
-    left: calc(50% - 171px);
-    width: 342px;
+    max-width: 342px;
 }
 
 .contacts-item-h1 {
@@ -385,7 +384,7 @@ a {
     padding-top: 50px;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 953px){
     .program-item {
         width: 30%;
         margin-top: 40px;
@@ -415,7 +414,6 @@ a {
 
     .phone_image {
         display: inline-block;
-        
     }
 
     .container {
