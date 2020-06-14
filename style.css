@@ -463,8 +463,8 @@ i {
 
 .container-burger {
     height: 100%;
-    width: calc(100% - 3px);
-    max-width: 318px;
+    width: calc(100% - 58px);
+
     display: none;
     position: absolute;
 }
