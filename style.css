@@ -336,6 +336,7 @@ a {
 }
 
 .contacts-button::before {
+    border-radius: 50px;
     content: "";
     position: absolute;
     top: -2px;
