@@ -404,6 +404,9 @@ i {
     transform: rotate(-45deg);
 }
 
+.fa-plus {
+    color: #828282;
+}
 .ul-burger {
     flex-direction: column;
     font-size: 34px;
