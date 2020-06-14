@@ -249,9 +249,8 @@ header {
     margin-bottom: 55px;
 }
 
-#portfolio1, #portfolio2, #portfolio3 {
+#portfolio{
     background-color: #F6F6F6;
-    height: 100vh;
 }
 
 .portfolio-container {
@@ -394,6 +393,10 @@ a {
 
 
 @media screen and (max-width: 500px){
+
+    .contacts-button {
+        margin: 0 auto 80px auto;
+    }
 
     #name-item { 
         width: 100%;
